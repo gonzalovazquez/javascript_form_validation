@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Pizza Order</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Gonzalo Vazquez" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+			<header><img src="pizza.jpg" alt="pizza"/></header>
+			<nav></nav>
+			<section>
+		<article id="personalInfo">
+			<h4>Enter your name, address, and phone number</h4>
+			<form name="order" action="" method="get" onsubmit="return validateForm()">
+				<fieldset>
+					<legend>Personal Information</legend>
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="fname"><br>
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address"><br>
+					<label for="city">City:</label>
+					<input type="name" name="city" id="city"><br>
+					<label for="province">Province:</label>
+					<input type="name" name="province" id="province"><br>
+					<label for="postalCode">Postal Code:</label>
+					<input type="name" name="postalCode" id="postal"><br>
+					<label for="phone">Phone:</label>
+					<input type="number" name="phone" id="phone">
+				</fieldset>	
+				<fieldset>
+					<legend>Pizza Size:</legend>
+					<input type="radio" name="size" value="1" id="small">
+					<label for="small">Small</label>
+					<input type="radio" name="size" value="2" id="medium">
+					<label for="medium">Medium</label>
+					<input type="radio" name="size" value="3" id="large">
+					<label for="large">Large</label>
+				</fieldset>
+				<fieldset>
+					<legend>Toppings:</legend>
+					<input type="checkbox" name="pepperoni" value="1">
+					<label for="pepperoni">Pepperoni</label>
+					<input type="checkbox" name="mushrooms" value="2">
+					<label for="mushrooms">Mushrooms</label>
+					<input type="checkbox" name="Bacon" value="3">
+					<label for="Bacon">Bacon</label>
+					<input type="checkbox" name="onion" value="4">
+					<label for="onion">Onion</label>
+					<input type="checkbox" name="tomatoes" value="5">
+					<label for="tomatoes">Tomatoes</label>
+					<input type="checkbox" name="olives" value="6">
+					<label for="olives">Olives</label>
+					<input type="checkbox" name="pineapple" value="7">
+					<label for="pineapple">Pineapple</label>
+					<input type="checkbox" name="greenpepper" value="8">
+					<label for="greenpepper">Green Pepper</label>
+					<input type="checkbox" name="xcheese" value="9">
+					<label for="xcheese">Extra cheese</label>
+				</fieldset>	
+				<input type="submit" value="Submit Order" id="submit">	
+			</form>
+			<input type="submit" value="Clear form" onclick="clearForm()" id="clear">
+		</article>
+	</section>
+	<footer> &copy; Gonzalo Vazquez</footer>
+	<script type="text/javascript" src="validation.js"></script>
+	</body>
+</html>
